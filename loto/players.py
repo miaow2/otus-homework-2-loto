@@ -9,7 +9,7 @@ class Player:
     Базовый класс игрока
     """
 
-    victory_card = [False for x in range(15)]
+    victory_card = [False] * 15
 
     def __init__(self, name):
         self._name = name
@@ -39,7 +39,7 @@ class Player:
         """
         Метод отметки выпавших бочонков
         """
-        if barrel in self.card.keys():
+        if barrel in self.card:
             self.card[barrel] = False
 
     def check_card(self):

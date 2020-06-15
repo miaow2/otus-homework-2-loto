@@ -4,7 +4,7 @@ class Game:
     """
 
     def __init__(self):
-        self.barrels = [x for x in range(1, 91)]
+        self.barrels = [_ for _ in range(1, 91)]
         self.players = list()
 
     def __iter__(self):
